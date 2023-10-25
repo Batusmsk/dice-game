@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batuhan</title>
+    <!-- FONT AWSOME KIT LINK-->
+    <script src="https://kit.fontawesome.com/515b445b8c.js" crossorigin="anonymous"></script>
+    <!-- FANCYBOX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <!-- CUSTOM JS -->
+    <script src="./js/script.js"></script>
+
+
+    
+    <header>
+        <nav class="nav">
+            <div class="container navbar">
+                <h1>BATUHAN</h1> 
+            </div>
+        </nav>
+    </header>
+
+    <section id="dicegame">
+        <div class="container">
+            <div class="dice-content">         
+                <div class="dicegame-user1">
+                    <h2>Oyuncu 2</h2>
+                    <img src="./img/user.png"> 
+                    <p class="gamer1-score" id="gamer1-score">Puan: 0</p>
+                </div>
+                <ul class="dice-items">         
+                    <li> 
+                        <img class="dice1-png" id="dice1-png" src="./img/dice-0.png">
+                        <img class="dice2-png" id="dice2-png" src="./img/dice-0.png">
+                    </li>
+                    <li><h2 id="dice-value"></h2></li>
+                    <li><button class="btn-general btn-light" id="btn-dice" onClick="btnDice(this)">Zar At</button></li>
+                    <li><p id="dice-message-box"></li>
+                    <li><h2 id="dice-winner"></h2>
+                </ul>             
+                <div class="dicegame-user2">
+                    <h2>Oyuncu 1</h2>
+                    <img src="./img/user.png">   
+                    <p class="gamer2-score" id="gamer2-score">Puan: 0</p>
+                </div>
+                
+            </div>
+        </section>
+        
+    </div>
+</body>
+
+</html>

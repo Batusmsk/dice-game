@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&family=Roboto+Condensed:wght@300;700&display=swap');
+
+/** GENERAL SETTINGS **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    color: var(--dark-color);
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-font: 'Raleway', sans-serif;
+    --secondary-font: 'Roboto Condensed', sans-serif;
+    --primary-color: #4792a5;
+    --light-color: #efefef;
+    --dark-color: #3c3c3c;
+
+}
+button {
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--secondary-font);
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 114rem;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+}
+.nav {
+    background-color: gray;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+.navbar h1 {
+    color: black;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    padding: 50%;
+}
+
+/** DICE SECTION **/
+
+#dicegame {
+    padding-top: 15rem;
+    width: 100%;;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-right: 20%;
+}
+.dice-content {
+    position: absolute;
+    top: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    width: 90%;
+    display: flex;
+
+}
+.dice-items {
+    flex-direction: column;
+}
+.dice-items .btn-general {
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    padding: .5rem 2rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    border-radius: 2rem;
+
+}
+.btn-light {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    transition: var(--general-transition);
+   }
+   .btn-light:hover {
+       color: var(--light-color);
+       background-color: var(--primary-color);
+   }
+
+.dice-items .dice1-png {
+    padding-top: 3rem;
+    padding-right: 1rem;
+    width: 35%;
+}
+.dice-items .dice2-png {
+    padding-top: 3rem;
+    padding-left: 1rem;
+    width: 35%;
+}
+.dicegame-user1 img {
+    width: 45%;
+    letter-spacing: 2rem;
+
+}
+.dicegame-user2 img {
+    width: 45%;
+}
+.gamer1-score {
+    font-weight: 700;
+    font-size: 13px;
+}
+.gamer2-score {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+
